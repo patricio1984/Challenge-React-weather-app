@@ -90,7 +90,7 @@ const formatToLocalTime = (
 ) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
 
 const iconUrlFromCode = (code) =>
-  `http://openweathermap.org/img/wn/${code}@2x.png`;
+  `https://openweathermap.org/img/wn/${code}@2x.png`;
 
 
 const generateId = () => {
