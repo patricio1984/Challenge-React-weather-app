@@ -10,6 +10,12 @@ const Inputs = ({setQuery, units, setUnits}) => {
     if(city !== "") setQuery({q: city}) 
   }
 
+  const handleSearchKeyPress = (e) => {
+    if (e.key === 'Enter') {
+        if(city !== "") setQuery({q: city})
+      }
+  }
+
   const handleLocationClick = () => {
     if (navigator.geolocation) {
       toast.info("Fetching users location.")  
@@ -42,7 +48,7 @@ const Inputs = ({setQuery, units, setUnits}) => {
                 value={city}
                 id="city"
                 onChange={(e) => setCity(e.currentTarget.value)}
-                onClick={handleSearchClick} 
+                onKeyPress={handleSearchKeyPress} 
                 type="text" 
                 placeholder="Search for city..."
                 className="text-xl font-light p-2 w-full shadow-xl capitalize rounded-md placeholder:lowercase" 
