@@ -1,5 +1,5 @@
 import React from 'react'
-import { iconUrlFromCode } from '../services/weatherService'
+import { iconUrlFromCode, generateId } from '../services/weatherService'
 
 const Forecast = ({title, items}) => {
   return (
@@ -11,9 +11,9 @@ const Forecast = ({title, items}) => {
         </div>
         <hr className="my-2" />
 
-        <div className="flex flex-row items-center justify-between text-white">
+        <ul className="flex flex-row items-center justify-between text-white">
             {items.map((item) => (
-                <div className="flex flex-col items-center justify-center">
+                <li key={generateId()} className="flex flex-col items-center justify-center">
                     <p className="font-light text-sm">
                         {item.title}
                     </p>
@@ -25,9 +25,9 @@ const Forecast = ({title, items}) => {
                          
                     />
                     <p className="font-medium">{`${item.temp.toFixed()}º`}</p>
-                </div>
+                </li>
             ))}
-        </div>
+        </ul>
     </>
   )
 }
