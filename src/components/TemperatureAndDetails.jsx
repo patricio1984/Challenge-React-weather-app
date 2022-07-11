@@ -24,7 +24,9 @@ const TemperatureAndDetails = ({weather: {
                 src={iconUrlFromCode(icon)} 
                 alt="City Weather icon"
                 aria-hidden="true"  
-                className="w-20" 
+                className="w-20"
+                width="80"
+                height="80" 
             />
 
             <h2 className="text-5xl">{`${temp.toFixed()}°`}</h2>

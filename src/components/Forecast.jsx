@@ -22,7 +22,8 @@ const Forecast = ({title, items}) => {
                         alt={`${item.title} Weather icon`}
                         aria-hidden="true" 
                         className="w-12 my-1"
-                         
+                        width="48"
+                        height="48"                     
                     />
                     <p className="font-medium">{`${item.temp.toFixed()}º`}</p>
                 </li>
