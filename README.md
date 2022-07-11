@@ -1,3 +1,18 @@
+# Challenge react weather app
+
+# Description
+This a weather SPA that works with the openweathermap API. This SPA have several functionalities, including: search weather data by location thought a search input, fetching data like temperature, sunset and sunrise, and also hour and current day and year at the moment of the fetch.
+
+# How to use the project
+
+- Clone repository
+- Install dependencies from the terminal with npm install.
+- Get an API key from [https://openweathermap.org/](https://openweathermap.org/) and add it to weatherService.js file.
+- Run npm start and open [http://localhost:3000](http://localhost:3000) in your browser.
+
+# Useful information
+This proyect was created with create react app and it was used Tailwind CSS in order to work with the styles from this page. Also we worked with another react libraries such as: React Toastify, IconScout and Luxon. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +83,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Challenge-React-weather-app
